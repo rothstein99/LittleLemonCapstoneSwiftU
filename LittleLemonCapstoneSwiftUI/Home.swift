@@ -1,4 +1,3 @@
-
 import SwiftUI
 import CoreData
 
@@ -30,20 +29,37 @@ struct Home: View {
                     .background(Color.white)
 
                     // HERO
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text("Little Lemon")
-                            .font(.system(size: 38, weight: .bold))
-                            .foregroundColor(.yellow)
+                    VStack(spacing: 12) {
 
-                        Text("Chicago")
-                            .font(.title2)
-                            .foregroundColor(.white)
+                        // TEXT + IMAGE
+                        HStack(alignment: .top, spacing: 15) {
 
-                        Text("We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
-                            .foregroundColor(.white)
+                            VStack(alignment: .leading, spacing: 12) {
+                                Text("Little Lemon")
+                                    .font(.system(size: 38, weight: .bold))
+                                    .foregroundColor(.yellow)
 
+                                Text("Chicago")
+                                    .font(.title2)
+                                    .foregroundColor(.white)
+
+                                Text("We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
+                                    .foregroundColor(.white)
+                            }
+
+                            Image("Hero image")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 130, height: 180)
+                                .clipped()
+                                .cornerRadius(16)
+                                .offset(y: -5)
+                        }
+
+                        // FULL-WIDTH SEARCH BAR
                         HStack {
                             Image(systemName: "magnifyingglass")
+                                .foregroundColor(.gray)
 
                             Text("Search menu")
                                 .foregroundColor(.gray)
