@@ -1,21 +1,36 @@
-//
-//  LittleLemonCapstoneSwiftUIApp.swift
-//  LittleLemonCapstoneSwiftUI
-//
-//  Created by Brad Rothstein on 8/30/26.
-//
-
+/*
 import SwiftUI
-import CoreData
 
 @main
 struct LittleLemonCapstoneSwiftUIApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            if UserDefaults.standard.bool(forKey: "isLoggedIn") {
+                Home()
+            } else {
+                Onboarding()
+            }
         }
     }
 }
+
+*/
+
+import SwiftUI
+
+@main
+struct LittleLemonCapstoneSwiftUIApp: App {
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
+
+    var body: some Scene {
+        WindowGroup {
+            if isLoggedIn {
+                Home()
+            } else {
+                Onboarding()
+            }
+        }
+    }
+}
+

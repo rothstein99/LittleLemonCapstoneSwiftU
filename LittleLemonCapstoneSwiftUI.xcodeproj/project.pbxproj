@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E7C2FC60304506FE0053EB42 /* Dish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C2FC5E304506FE0053EB42 /* Dish+CoreDataClass.swift */; };
+		E7C2FC61304506FE0053EB42 /* Dish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C2FC5F304506FE0053EB42 /* Dish+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E7C2FC1F3044BAD10053EB42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		E7C2FC0C3044BACF0053EB42 /* LittleLemonCapstoneSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemonCapstoneSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C2FC1E3044BAD10053EB42 /* LittleLemonCapstoneSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonCapstoneSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C2FC283044BAD10053EB42 /* LittleLemonCapstoneSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonCapstoneSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C2FC5E304506FE0053EB42 /* Dish+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E7C2FC5F304506FE0053EB42 /* Dish+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		E7C2FC033044BACF0053EB42 = {
 			isa = PBXGroup;
 			children = (
+				E7C2FC5E304506FE0053EB42 /* Dish+CoreDataClass.swift */,
+				E7C2FC5F304506FE0053EB42 /* Dish+CoreDataProperties.swift */,
 				E7C2FC0E3044BACF0053EB42 /* LittleLemonCapstoneSwiftUI */,
 				E7C2FC213044BAD10053EB42 /* LittleLemonCapstoneSwiftUITests */,
 				E7C2FC2B3044BAD10053EB42 /* LittleLemonCapstoneSwiftUIUITests */,
@@ -236,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C2FC60304506FE0053EB42 /* Dish+CoreDataClass.swift in Sources */,
+				E7C2FC61304506FE0053EB42 /* Dish+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
