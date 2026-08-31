@@ -9,7 +9,7 @@ struct Home: View {
             ScrollView {
                 VStack(spacing: 0) {
 
-                    // HEADER
+                    //header
                     HStack {
                         Image("Logo")
                             .resizable()
@@ -28,10 +28,10 @@ struct Home: View {
                     .padding()
                     .background(Color.white)
 
-                    // HERO
+                    //hero
                     VStack(spacing: 12) {
 
-                        // TEXT + IMAGE
+                        //text
                         HStack(alignment: .top, spacing: 15) {
 
                             VStack(alignment: .leading, spacing: 12) {
@@ -46,7 +46,7 @@ struct Home: View {
                                 Text("We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
                                     .foregroundColor(.white)
                             }
-
+                            //hero image
                             Image("Hero image")
                                 .resizable()
                                 .scaledToFill()
@@ -56,7 +56,7 @@ struct Home: View {
                                 .offset(y: -5)
                         }
 
-                        // FULL-WIDTH SEARCH BAR
+                        //search bar
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .foregroundColor(.gray)
@@ -98,7 +98,7 @@ struct Home: View {
                     .padding()
                     .background(Color.white)
 
-                    // FOOD MENU
+                    //menu
                     Menu()
                         .environment(
                             \.managedObjectContext,
